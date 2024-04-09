@@ -10,6 +10,8 @@ pipeline {
         echo '%JAVA_HOME%'
         echo 'cd'
         echo 'env.BRANCH_NAME'
+        echo 'env'
+        pwd(tmp: true)
       }
     }
 
