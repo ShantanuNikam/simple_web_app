@@ -7,7 +7,9 @@ pipeline {
       }
       steps {
         pwd()
-        echo 'echo "%JAVA_HOME%"'
+        echo '%JAVA_HOME%'
+        echo 'cd'
+        echo 'env.BRANCH_NAME'
       }
     }
 
